@@ -25,13 +25,13 @@ TASK3 可以直接编译。程序会从标准输入读取地图，输入格式�
 
 ```bash
 g++ -std=c++17 27exam/TASK3/main.cpp -o 27exam/TASK3/task3
-./27exam/TASK3/task3
+./27exam/TASK3/task3 < 27exam/TASK3/sample.in
 ```
 
 TASK4～TASK6 使用 CMake。以 TASK6 为例：
 
 ```bash
-cmake -S TASK6 -B 27exam/TASK6/build
+cmake -S 27exam/TASK6 -B 27exam/TASK6/build
 cmake --build 27exam/TASK6/build
 ./27exam/TASK6/build/task6
 ```
