@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.10)
-project(TASK2 LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.15)
+project(test)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
 
-add_executable(app main.cpp)
+set(EXECUTABLE_OUTPUT_PATH ..)
+add_executable(app ${SRC})

@@ -8,12 +8,12 @@
 
 | 题目 | 内容 | 主要文件 |
 | --- | --- | --- |
-| TASK1 | Linux 终端配置与美化 | [终端截图](<TASK1/屏幕截图 2026-11-08 142241.png>) |
-| TASK2 | Bash 脚本、CMake 构建与命令行参数 | `TASK2/run.sh`、`TASK2/src/main.cpp` |
-| TASK3 | 网格地图的 DFS 可达区域搜索与 A* 最小代价路径搜索 | `TASK3/main.cpp` |
-| TASK4 | 不同图像数据来源的统一处理 | `TASK4/main.cpp` |
-| TASK5 | 双电梯调度模拟 | `TASK5/my_scheduler.hpp`、`TASK5/my_scheduler.cpp` |
-| TASK6 | 串口帧编码、CRC 校验与流式解码 | `TASK6/protocol.hpp`、`TASK6/protocol.cpp` |
+| TASK1 | Linux 终端配置与美化 | [终端截图](<27exam/TASK1/屏幕截图 2026-11-08 142241.png>) |
+| TASK2 | Bash 脚本、CMake 构建与命令行参数 | `27exam/TASK2/run.sh`、`27exam/TASK2/src/main.cpp` |
+| TASK3 | 网格地图的 DFS 可达区域搜索与 A* 最小代价路径搜索 | `27exam/TASK3/main.cpp` |
+| TASK4 | 不同图像数据来源的统一处理 | `27exam/TASK4/main.cpp` |
+| TASK5 | 双电梯调度模拟 | `27exam/TASK5/my_scheduler.hpp`、`27exam/TASK5/my_scheduler.cpp` |
+| TASK6 | 串口帧编码、CRC 校验与流式解码 | `27exam/TASK6/protocol.hpp`、`27exam/TASK6/protocol.cpp` |
 
 六道问答题的作答见 [ANSWERS.md](ANSWERS.md)。
 
@@ -24,16 +24,16 @@
 TASK3 可以直接编译。程序会从标准输入读取地图，输入格式以题目要求为准。
 
 ```bash
-g++ -std=c++17 TASK3/main.cpp -o TASK3/task3
-./TASK3/task3
+g++ -std=c++17 27exam/TASK3/main.cpp -o 27exam/TASK3/task3
+./27exam/TASK3/task3
 ```
 
 TASK4～TASK6 使用 CMake。以 TASK6 为例：
 
 ```bash
-cmake -S TASK6 -B TASK6/build
-cmake --build TASK6/build
-./TASK6/build/task6
+cmake -S TASK6 -B 27exam/TASK6/build
+cmake --build 27exam/TASK6/build
+./27exam/TASK6/build/task6
 ```
 
-运行 TASK4 或 TASK5 时，将命令里的 `TASK6` 换成对应的目录名，最后运行相应的 `task4` 或 `task5`。TASK2 也有独立的 `CMakeLists.txt`，可用相同方式构建，生成的程序位于 `TASK2/app`，与 `TASK2/run.sh` 使用的路径一致。
+运行 TASK4 或 TASK5 时，将命令里的 `TASK6` 换成对应的目录名，最后运行相应的 `task4` 或 `task5`。TASK2 也有独立的 `CMakeLists.txt`，可用相同方式构建，生成的程序位于 `27exam/TASK2/app`，与 `27exam/TASK2/run.sh` 使用的路径一致。
