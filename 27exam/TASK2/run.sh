@@ -1,4 +1,3 @@
-#指定bash运行这个文件
 #!/usr/bin/env bash
 cd -- "$(dirname -- "$0")" || exit 1
 build_project() {
